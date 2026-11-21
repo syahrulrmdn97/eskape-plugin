@@ -1,5 +1,13 @@
 # Panduan lengkap — terbitkan website eskape lewat GitHub Pages
 
+## Pembaruan harga ESKAPE Tracing v2.5.1
+- **Free:** Rp0 (fitur terbatas)
+- **Full Monthly:** Rp16.000 / bulan
+- **Full Yearly:** Rp79.000 / tahun
+- **Full Lifetime:** Rp199.000 / sekali bayar
+
+Website telah diperbarui dengan 4 kartu harga dan tombol pemesanan WhatsApp spesifik untuk masing-masing paket. Nomor WhatsApp tetap seperti pada file sumber.
+
 Paket ini sudah dikonfigurasi:
 - WhatsApp publisher: +62 858-1114-3043 (format 6285811143043)
 - Tombol download berisi `downloads/eskape_SketchUp_v2.5.1_Free_Full_Beta.rbz`
@@ -7,7 +15,7 @@ Paket ini sudah dikonfigurasi:
 - Website **belum online** sampai Anda unggah dan aktifkan Pages pada akun GitHub sendiri.
 
 ## A. Persiapan — di komputer
-1. Download `eskape_Website_GitHub_Pages_v2.zip` dari percakapan.
+1. Download `eskape_Website_GitHub_Pages_v2_Harga_Terbaru.zip` dari percakapan.
 2. Klik kanan → **Extract All...** (Windows 10/11). Jangan upload file ZIP langsung sebagai satu file.
 3. Buka hasil ekstrak. Pastikan di level teratas terdapat:
    - `index.html`
@@ -35,7 +43,7 @@ Paket ini sudah dikonfigurasi:
    - Alternatif yang praktis: seret file-file lalu folder `assets` dan `downloads` ke kotak upload. GitHub mendukung unggah folder via drag-and-drop di browser modern.
    - Jika file tersembunyi `.nojekyll` tidak ikut: buat file baru `.nojekyll` melalui **Add file → Create new file** bila diperlukan.
 4. Tunggu daftar file selesai tampil. Pastikan `index.html` terlihat di root repository, bukan `eskape-website/index.html`.
-5. Di kolom **Commit changes**, tulis `Publish eskape website v2.5.1`.
+5. Di kolom **Commit changes**, tulis `Update harga eskape v2.5.1 (Free / Monthly / Yearly / Lifetime)`.
 6. Pilih **Commit directly to the main branch** jika tersedia, lalu klik **Commit changes**.
 7. Kembali ke tab **Code**. Periksa folder `assets/` dan `downloads/` berisi file.
 
@@ -70,7 +78,7 @@ eskape (repository)
 ## E. Uji tombol publik
 1. Buka website melalui `https://USERNAME.github.io/eskape/`.
 2. Klik **Download Free**. Nama berkas yang diunduh harus `eskape_SketchUp_v2.5.1_Free_Full_Beta.rbz`.
-3. Klik **Buy Full via WhatsApp**. Harus membuka pesan WhatsApp ke `+62 858-1114-3043`.
+3. Pastikan kartu harga menunjukkan Rp0, Rp16.000/bulan, Rp79.000/tahun, dan Rp199.000/Lifetime. Klik tombol tiap paket Full; pesan WhatsApp harus memuat paket serta harga yang dipilih, ke `+62 858-1114-3043`.
 4. Klik navigasi `Features`, `Pricing`, dan `Get started`.
 5. Uji juga melalui HP.
 6. Masuk ke SketchUp, buka ekstensi **eskape**, lalu About → Buy Full; periksa WhatsApp membuka nomor yang sama dan memasukkan Installation ID.
@@ -98,3 +106,10 @@ eskape (repository)
 Sumber resmi:
 - https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 - https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+
+## I. Khusus memperbarui repository GitHub yang sudah live
+1. Buka repository GitHub lama dan pastikan branch yang dipakai GitHub Pages (umumnya `main`).
+2. Unggah untuk **mengganti** `index.html`, `style.css`, `script.js`, serta `README_GITHUB_PAGES_ID.md`.
+3. File `config.js`, folder `assets/`, dan `downloads/` tidak perlu diganti jika isinya memang sama.
+4. Commit perubahan, lalu cek Settings → Pages dan buka situs; refresh paksa jika harga lama masih terlihat.
+5. Jangan mengunggah file `.zip` langsung ke root repo dan berharap GitHub Pages mengekstraknya. Ekstrak ZIP terlebih dahulu.
