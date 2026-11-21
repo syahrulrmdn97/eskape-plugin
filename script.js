@@ -16,7 +16,9 @@
         showToast('Nomor WhatsApp publisher belum dikonfigurasi. Atur whatsappNumber pada config.js dahulu.');
         return;
       }
-      var msg = 'Halo, saya ingin membeli eskape Full. Mohon info harga dan aktivasi key. Saya akan kirim Installation ID dari About plugin.';
+      var paket = btn.getAttribute('data-whatsapp') || '';
+      var harga = btn.getAttribute('data-price') || '';
+      var msg = 'Halo, saya ingin membeli ESKAPE Tracing Full v2.5.1, paket ' + paket + ' (' + harga + '). Mohon panduan pembayaran dan aktivasi lisensi. Saya akan mengirim Installation ID dari About plugin.';
       window.open('https://wa.me/' + number + '?text=' + encodeURIComponent(msg), '_blank', 'noopener,noreferrer');
     });
   });
