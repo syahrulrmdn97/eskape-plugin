@@ -10,7 +10,7 @@ Website telah diperbarui dengan 4 kartu harga dan tombol pemesanan WhatsApp spes
 
 Paket ini sudah dikonfigurasi:
 - WhatsApp publisher: +62 858-1114-3043 (format 6285811143043)
-- Tombol download berisi `downloads/eskape_SketchUp_v2.5.1_Free_Full_Beta.rbz`
+- Tombol download berisi `downloads/eskape_SketchUp_v2.5.1_Free_Trial.rbz`
 - Situs HTML statis: GitHub Pages tanpa biaya hosting pada repository publik GitHub Free.
 - Website **belum online** sampai Anda unggah dan aktifkan Pages pada akun GitHub sendiri.
 
@@ -25,7 +25,7 @@ Paket ini sudah dikonfigurasi:
    - `.nojekyll` (file tersembunyi; aktifkan View → Show → Hidden items jika perlu)
    - folder `assets/`
    - folder `downloads/`
-4. Buka `downloads/`: harus ada `eskape_SketchUp_v2.5.1_Free_Full_Beta.rbz`.
+4. Buka `downloads/`: harus ada `eskape_SketchUp_v2.5.1_Free_Trial.rbz`.
 5. Jangan menambahkan file `license_private.pem`, generator key pribadi, atau token admin ke dalam folder website.
 
 ## B. Buat repository GitHub
@@ -60,7 +60,7 @@ eskape (repository)
 │   ├── eskape-logo.png
 │   └── eskape_product.png
 └── downloads/
-    └── eskape_SketchUp_v2.5.1_Free_Full_Beta.rbz
+    └── eskape_SketchUp_v2.5.1_Free_Trial.rbz
 ```
 
 ## D. Aktifkan GitHub Pages
@@ -77,7 +77,7 @@ eskape (repository)
 
 ## E. Uji tombol publik
 1. Buka website melalui `https://USERNAME.github.io/eskape/`.
-2. Klik **Download Free**. Nama berkas yang diunduh harus `eskape_SketchUp_v2.5.1_Free_Full_Beta.rbz`.
+2. Klik **Download Free**. Nama berkas yang diunduh harus `eskape_SketchUp_v2.5.1_Free_Trial.rbz`.
 3. Pastikan kartu harga menunjukkan Rp0, Rp16.000/bulan, Rp79.000/tahun, dan Rp199.000/Lifetime. Klik tombol tiap paket Full; pesan WhatsApp harus memuat paket serta harga yang dipilih, ke `+62 858-1114-3043`.
 4. Klik navigasi `Features`, `Pricing`, dan `Get started`.
 5. Uji juga melalui HP.
@@ -86,7 +86,7 @@ eskape (repository)
 ## F. Jika ada masalah
 - **404 Not Found**: pastikan GitHub Pages memakai `main / (root)` dan file `index.html` berada di root. Lihat tab Actions jika ada error.
 - **Tampilan tanpa CSS/gambar**: pastikan file `style.css`, folder `assets/`, dan `config.js` ada, dan kapitalisasi namanya sesuai.
-- **Download 404**: periksa path file `downloads/eskape_SketchUp_v2.5.1_Free_Full_Beta.rbz` sesuai nama persis (huruf besar-kecil penting).
+- **Download 404**: periksa path file `downloads/eskape_SketchUp_v2.5.1_Free_Trial.rbz` sesuai nama persis (huruf besar-kecil penting).
 - **WhatsApp gagal**: pastikan browser tidak memblokir tab baru; file `config.js` mengandung `6285811143043`.
 - **Halaman terlihat lama**: lakukan hard refresh `Ctrl+F5` dan pastikan commit sudah masuk branch main.
 - **Akun tidak melihat menu Pages**: periksa izin admin/maintainer di repository dan visibility/plan.
